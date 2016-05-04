@@ -1,4 +1,4 @@
-# Aulas de Programação de Computadores
+# Exercícios de Programação de Computadores
 
 **Instituição**: Instituto Federal do Rio Grande do Norte
 
