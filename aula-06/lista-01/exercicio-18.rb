@@ -10,7 +10,7 @@ porcentagem = 0.0
 for x, y in impostos do
 	porcentagem += y
 end
-puts porcentagem
+# puts porcentagem
 valor_sem_imposto = vf / (1.0 + porcentagem)
 for x, y in impostos do
 	puts "#{x}: %.2f" % (valor_sem_imposto * y)
