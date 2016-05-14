@@ -1,4 +1,4 @@
-## Eexpressões Matemáticas em Ruby
+## Expressões Matemáticas em Ruby
 
 a) 1 + 5 - 2
 
