@@ -1,17 +1,21 @@
-d, m, a = gets.to_i, gets.to_i, gets.to_i
+months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+d = gets.to_i
+m = gets.to_i
+a = gets.to_i
 n = gets.to_i
 
 if n > 0
-	d -= n
-	until d > 0 do
-		d += 31
-		if m == 1
-			m = 12
-			a -= 1
-		else
-			m -= 1
-		end
-	end
+    d += n
+    until d <= months[m - 1]
+        d -= months[m - 1]
+				puts d
+        if m == 12
+            m = 1
+            a += 1
+        else
+            m += 1
+        end
+    end
 
-	puts '%02i/%02i/%04i' % [d, m, a]
+    puts '%02i/%02i/%04i' % [d, m, a]
 end
