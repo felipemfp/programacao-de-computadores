@@ -10,7 +10,7 @@ if c2_velocidade > c1_velocidade
  	r = '--:--:--'
 else
 	tempo = (distancia * 1.0) / (c1_velocidade - c2_velocidade)
-	if tempo * c1_consumo > c1_tanque
+	if distancia * c1_consumo < c1_tanque
 	    r = '--:--:--'
 	else
 		s = tempo * (60.0 * 60.0)
