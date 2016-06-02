@@ -13,9 +13,10 @@ final_grade = partial_grade
 
 if partial_grade >= 2 and partial_grade < 6
 	final_test = gets.to_f
-	final_grade = (partial_grade + final_test) / 2
-	final_grade = (final_grade < 6) ? ((2*grade1 + 3*final_test) / 5) : final_grade
-	final_grade = (final_grade < 6) ? ((3*grade2 + 2*final_test) / 5) : final_grade
+	final_grade1 = ((partial_grade + final_test) / 2)
+	final_grade2 = ((2*grade1 + 3*final_test) / 5)
+	final_grade3 = ((3*grade2 + 2*final_test) / 5) 
+	final_grade = (final_grade1 > final_grade2 and final_grade2 > final_grade3) ? final_grade1 : (final_grade2 > final_grade3 ? final_grade2 : final_grade3)
 end
 
 final_test_report = final_test ? '%.1f' % final_test : '-'
