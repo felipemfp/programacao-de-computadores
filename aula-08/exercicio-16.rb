@@ -8,7 +8,6 @@ if n > 0
     d += n
     until d <= months[m - 1]
         d -= months[m - 1]
-				puts d
         if m == 12
             m = 1
             a += 1
