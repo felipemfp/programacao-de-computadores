@@ -16,10 +16,10 @@ if partial_grade >= 2 and partial_grade < 6
 	final_grade1 = (partial_grade + final_test) / 2
 	final_grade2 = (2*partial_grade + 3*final_test) / 5
 	final_grade3 = (3*partial_grade + 2*final_test) / 5
-	final_grade = final_grade1 > final_grade2 and final_grade2 > final_grade3 ? final_grade1 : (final_grade2 > final_grade3 ? final_grade2 : final_grade3)
+	final_grade = (final_grade1 > final_grade2 and final_grade2 > final_grade3) ? final_grade1 : (final_grade2 > final_grade3 ? final_grade2 : final_grade3)
 end
 
-final_test_report = final_test ? '.1f' % final_test : '-'
-report = final_grade >= 6 ? 'APROVADO' : 'REPROVADO'
+final_test_report = final_test ? '%.1f' % final_test : '-'
+report = (final_grade >= 6) ? 'APROVADO' : 'REPROVADO'
 
 puts '%.1f:%.1f:%s:%.1f:%s' % [grade1, grade2, final_test_report, final_grade, report]
