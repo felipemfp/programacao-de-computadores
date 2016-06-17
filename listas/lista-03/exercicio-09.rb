@@ -7,6 +7,6 @@ end
 
 t = a[0]
 a[0] = a[i]
-a[i] = a[0]
+a[i] = t
 
 puts a
