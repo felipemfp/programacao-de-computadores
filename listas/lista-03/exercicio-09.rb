@@ -1,7 +1,7 @@
 a = 30.times.map do gets.to_i end
 i = gets.to_i
 
-if i >= a.size
+if i >= a.size or i < 0
   i = -1
 end
 
