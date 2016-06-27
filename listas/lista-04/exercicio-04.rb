@@ -1,3 +1,1 @@
-for x in 1..200
-  puts 200 - x + 1
-end
+puts (1..200).to_a.reverse

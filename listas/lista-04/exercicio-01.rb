@@ -1,9 +1,7 @@
 n = gets.to_i
 
-if n > 0
-  for x in 0..n do
-    puts x
-  end
+if n >= 0
+  puts (0..n).to_a
 else
   puts 'NEGATIVO'
 end
