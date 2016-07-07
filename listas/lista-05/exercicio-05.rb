@@ -1,4 +1,4 @@
-def conta_palavra (texto)
+def conta_palavras (texto)
   n = -1
   if texto.is_a?(String)
     n = texto.split.size

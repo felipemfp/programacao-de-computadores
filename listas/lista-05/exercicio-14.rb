@@ -27,5 +27,3 @@ def transcreve_numero (telefone)
   end
   return l
 end
-
-puts transcreve_numero(gets.chomp)
