@@ -52,6 +52,7 @@ t(conta_palavras('Isto eh so  um teste.'), 5)
 #Questao 6
 puts 'Questao 6'
 t(intervalo_a_b(3,7),[3,4,5,6,7])
+t(intervalo_a_b(5,2),[5,4,3,2])
 
 #Questao 7
 puts 'Questao 7'
@@ -108,6 +109,7 @@ t(massa_molecula('CO2'), 44)
 #Questao 19
 puts 'Questao 19'
 t(quadrado_magico?([[2,7,6],[9,5,1],[4,3,8]]))
+t(quadrado_magico?([[2,7,6],[9,5,1],[4,3,8,0]]), false)
 
 #Questao 20
 puts 'Questao 20'
